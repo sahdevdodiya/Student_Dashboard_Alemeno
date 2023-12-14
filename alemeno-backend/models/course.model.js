@@ -1,41 +1,31 @@
-const mongoose = require("mongoose")
-const prerequisitesSchema = mongoose.Schema({
-    prerequisites: [String]
-})
-
-const syllabusSchema = mongoose.Schema({
-    syllabus: [
-        {
-            week: Number,
-            topic: String,
-            content: String,
-        }
-    ]
-})
-const studentsSchema = mongoose.Schema({
-    students: [
-        {
-            id: Number,
-            name: String,
-            email: String
-        }
-    ]
-})
+const mongoose = require('mongoose');
 
 const courseSchema = mongoose.Schema({
-    name: String,
-    instructor: String,
-    description: String,
-    enrollmentStatus: String,
-    thumbnail: String,
-    duration: String,
-    schedule: String,
-    location: String,
-    prerequisites: prerequisitesSchema,
-    syllabus: syllabusSchema,
-    students: studentsSchema
-})
+    name: { type: String, required: true },
+    instructor: { type: String, required: true },
+    description: { type: String, required: true },
+    enrollmentStatus: { type: String, required: true },
+    thumbnail: { type: String, required: true },
+    duration: { type: String, required: true },
+    schedule: { type: String, required: true },
+    location: { type: String, required: true },
+    prerequisites: [{ type: String, required: true }],
+    syllabus: [
+        {
+            week: { type: Number, required: true },
+            topic: { type: String, required: true },
+            content: { type: String, required: true },
+        },
+    ],
+    students: [
+        {
+            id: { type: Number, required: true },
+            name: { type: String, required: true },
+            email: { type: String, required: true },
+        },
+    ],
+});
 
-const CourseModel = mongoose.model("Course", courseSchema)
+const CourseModel = mongoose.model('Course', courseSchema);
 
 module.exports = CourseModel;
