@@ -14,7 +14,9 @@ courseRouter.get("/", async (req, res) => {
 
 courseRouter.post("/", async (req, res) => {
     try {
+        console.log(req.body)
         const newCourse = new CourseModel({ ...req.body })
+
         await newCourse.save()
         res.status(200).json("courses added Successfully")
     } catch (error) {
