@@ -12,10 +12,10 @@ const Navbar = () => {
             All Courses
           </Text>
         </Link>
-        <Link to={"/student"}>
+        <Link to={"/dashboard"}>
           {" "}
           <Text fontSize="xl" fontWeight="bold">
-            Dashboard
+            Student Dashboard
           </Text>
         </Link>
       </Flex>

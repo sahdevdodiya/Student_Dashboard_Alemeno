@@ -1,10 +1,11 @@
 const express = require("express")
 const courseRouter = require("./Routes/courseListing.route")
 const connection = require("./Config/db")
+const cors = require("cors")
 const app = express()
 require("dotenv").config()
 app.use(express.json())
-
+app.use(cors())
 
 app.use("/", courseRouter)
 
