@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# App Details 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Course Listing
+Welcome to our course listing page! Explore a comprehensive list of available courses.
 
-## Available Scripts
+## How to Browse Courses
+Navigate through the courses listed below to find the one that suits your interests and needs.
 
-In the project directory, you can run:
+![Course Listing](https://github.com/Ak-nut-47/Alemeno/assets/104593018/e184abf7-73bb-4090-b76f-a30847fea2b5)
 
-### `npm start`
+## Search Bar
+The search bar allows users to effortlessly search through course titles, instructor names, and course descriptions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Search Bar](https://github.com/Ak-nut-47/Alemeno/assets/104593018/84a759d4-0987-4e17-963c-d0a1db2f4248)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Course Detail Screen 
+Find comprehensive information about each course, including details such as duration and mode of learning.
 
-### `npm test`
+![Course Detail](https://github.com/Ak-nut-47/Alemeno/assets/104593018/2495a6b2-6b72-49e9-9d2a-3f36513f8591)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Student Dashboard
+Welcome to the Student Dashboard, your central hub for managing student information and enrolled courses. Explore details about each student and the courses they are currently enrolled in.
 
-### `npm run build`
+## Responsive Design
+Ensure a seamless experience across small and medium screen sizes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Small Screen](https://github.com/Ak-nut-47/Alemeno/assets/104593018/4e39c733-371e-4ac1-b270-6745eb982f4d)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Medium Screen](https://github.com/Ak-nut-47/Alemeno/assets/104593018/cab4c480-7c79-4aab-ad85-1ec727f9f704)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Description 
 
-### `npm run eject`
+### Dependencies:
+- **@chakra-ui/react:** ^2.8.2
+- **@emotion/react:** ^11.11.1
+- **@emotion/styled:** ^11.11.0
+- **@testing-library/jest-dom:** ^5.17.0
+- **@testing-library/react:** ^13.4.0
+- **@testing-library/user-event:** ^13.5.0
+- **axios:** ^1.6.2
+- **framer-motion:** ^10.16.16
+- **react:** ^18.2.0
+- **react-dom:** ^18.2.0
+- **react-redux:** ^9.0.4
+- **react-router-dom:** ^6.21.0
+- **react-scripts:** 5.0.1
+- **redux:** ^5.0.0
+- **web-vitals:** ^2.1.4
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Deployment Link 
+Explore the app [here](https://marvelous-rugelach-d16254.netlify.app/).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Backend Logic 
+Find the backend logic [here](https://github.com/Ak-nut-47/Alemeno/tree/main/alemeno-backend).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Video Explanation of Project 
+Watch the video explanation of the project [here](https://drive.google.com/file/d/1VxCxvJ3QOnZVbFixxsRu2duivGixE2dr/view?usp=sharing).
