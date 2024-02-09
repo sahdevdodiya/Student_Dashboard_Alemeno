@@ -11,7 +11,7 @@ const CourseListing = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/")
+      .get("http://localhost:4000/")
       .then((el) => {
         dispatch(successAction(el.data.courses));
         console.log(el.data.courses);

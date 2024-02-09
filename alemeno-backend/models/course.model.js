@@ -3,35 +3,35 @@ const mongoose = require('mongoose');
 const courseSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true,
+        required: false, // Make the 'name' field optional
     },
     instructor: {
         type: String,
-        required: true,
+        required: false, // Make the 'instructor' field optional
     },
     description: {
         type: String,
-        required: true,
+        required: false, // Make the 'description' field optional
     },
     enrollmentStatus: {
         type: String,
-        required: true,
+        required: false, // Make the 'enrollmentStatus' field optional
     },
     thumbnail: {
         type: String,
-        required: true,
+        required: false, // Make the 'thumbnail' field optional
     },
     duration: {
         type: String,
-        required: true,
+        required: false, // Make the 'duration' field optional
     },
     schedule: {
         type: String,
-        required: true,
+        required: false, // Make the 'schedule' field optional
     },
     location: {
         type: String,
-        required: true,
+        required: false, // Make the 'location' field optional
     },
     prerequisites: {
         type: [String],
@@ -42,15 +42,15 @@ const courseSchema = new mongoose.Schema({
             {
                 week: {
                     type: Number,
-                    required: true,
+                    required: false, // Make the 'week' field optional
                 },
                 topic: {
                     type: String,
-                    required: true,
+                    required: false, // Make the 'topic' field optional
                 },
                 content: {
                     type: String,
-                    required: true,
+                    required: false, // Make the 'content' field optional
                 },
             },
         ],
@@ -61,11 +61,11 @@ const courseSchema = new mongoose.Schema({
             {
                 name: {
                     type: String,
-                    required: true,
+                    required: false, // Make the 'name' field of each student optional
                 },
                 email: {
                     type: String,
-                    required: true,
+                    required: false, // Make the 'email' field of each student optional
                 },
             },
         ],
@@ -76,5 +76,3 @@ const courseSchema = new mongoose.Schema({
 const CourseModel = mongoose.model('Course', courseSchema);
 
 module.exports = CourseModel;
-
-

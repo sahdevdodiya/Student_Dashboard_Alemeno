@@ -12,16 +12,25 @@ courseRouter.get("/", async (req, res) => {
     }
 })
 
+// courseRouter.post("/", async (req, res) => {
+//     try {
+//         console.log(req.body)
+//         const newCourse = new CourseModel({ ...req.body })
+
+//         await newCourse.save()
+//         res.status(200).json("courses added Successfully")
+//     } catch (error) {
+//         res.status(401).json(error.message)
+//     }
+// })
 courseRouter.post("/", async (req, res) => {
     try {
-        console.log(req.body)
-        const newCourse = new CourseModel({ ...req.body })
-
-        await newCourse.save()
-        res.status(200).json("courses added Successfully")
+        const newCourse = new CourseModel(req.body);
+        await newCourse.save();
+        res.status(200).json({ message: "Course created successfully", course: newCourse });
     } catch (error) {
-        res.status(401).json(error.message)
+        res.status(400).json({ error: error.message });
     }
-})
+});
 
 module.exports = courseRouter;
